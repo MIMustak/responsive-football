@@ -34,7 +34,7 @@ i{
     
 }
 
-/* Transition Transform & :hover Start Here */
+/* Transition Transform & :hover Style Here */
 .banner-img{
     width:600px;
     height: 500px;
@@ -42,9 +42,8 @@ i{
     transition: width 4s, height 4s, transform 4s;
 }
 .banner-img:hover{
-    width: 800px;
-    height: 650px;
-    /* transform: rotate(1080deg); */
+    width: 660px;
+    height: 600px;
     transform:skewX(-20deg);
     transform: skewY(5deg);
 }
@@ -61,7 +60,7 @@ i{
     background-color: rgb(23, 199, 31);
     border-radius: 5px;
 }
-/* Transition Transform & :hover End Here */
+
 
 
 /* All Player style's Here */
@@ -103,6 +102,32 @@ i{
 }
 .box-shadow{
     box-shadow: 0 0 10px rgba(203, 216, 230, 0.973);
+}
+
+/* Bonus Section Style */
+.fieldset1{
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    margin-top: 50px;
+    flex-direction: row;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 30px;
+    color: rgb(21, 172, 139);
+    background-color: rgba(7, 19, 36, 0.945);
+}
+.fixture{
+
+font-size: 20px;
+text-align: center;
+color: whitesmoke;
+margin-left: auto;
+margin-right: auto;
+}
+.team-flag img{
+    width:200px;
+    height: 100px;
 }
 
 
@@ -160,6 +185,7 @@ footer i{
         transform:skewX(-20deg);
         transform: skewY(5deg);    
     }
+ /* All Player style's Here */
     .top-players{
         width: 360px;
         padding-left: 22px;
@@ -187,4 +213,18 @@ footer i{
         height: 80px;
         padding-right: 30px;
     }
+
+    /* Bonus Section Style */
+.fieldset1{    
+    width:auto ;
+    margin-left: 60px;
+}
+.fixture{
+font-size: 15px;
+margin-left: 10px;
+}
+.team-flag img{
+    width:50px;
+    height: 80px;
+}
 }
