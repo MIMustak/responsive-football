@@ -4,16 +4,12 @@ body{
     margin: 0;
 }
 h1{
-    font-size: 60px;
+    font-size: 64px;
     margin: 0 0 27px 0;
     color: white;
 }
 h2{
     font-size: 28px;
-}
-i{
-    color: white;
-    margin-left: 12px;
 }
 
 /* Copa America Style */
@@ -21,7 +17,7 @@ i{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     background-color: #2D25A0;
-    width:1765px;
+    width:1580px;
     height: 677px;
    
 }
@@ -64,16 +60,19 @@ i{
 
 
 /* All Player style's Here */
-.players{
+.top-players{
     margin: 70px 0px 0 250px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 35px;
-    grid-row-gap: 31px;
+    /* display: grid; */
+    /* grid-template-rows: repeat(1, 1fr); */
+    /* display: flex; */
+    /* flex-direction: row; */
     width: 1050px;
-    margin-left: auto;
-    margin-right: auto;
-
+}
+.players, .fieldset1{
+ display: flex;
+    flex-direction: row;
+    grid-column-gap: 35px;
+    margin-top: 31px;
 }
 .player{
     width: 330px;
@@ -105,41 +104,75 @@ i{
 }
 
 /* Bonus Section Style */
+.match-fixture{
+    margin: 70px 0px 0 227px;
+    width: 1050px;
+
+}
 .fieldset1{
     display: flex;
     /* grid-template-columns: repeat(3, 1fr); */
     margin-top: 50px;
     flex-direction: row;
-    width: auto;
-    margin-left: 100px;
-    margin-right: 100px;
     font-size: 30px;
     color: rgb(21, 172, 139);
-    background-color: rgba(7, 19, 36, 0.945);
+    /* background-color: rgba(7, 19, 36, 0.945); */
 }
 .fixture{
-
-font-size: 20px;
-text-align: center;
-color: whitesmoke;
-margin-left: auto;
-margin-right: auto;
+    width: 330px;
+    height: 400px;
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(38, 5, 99);
+    box-shadow: 0 0 10px rgba(127, 174, 235, 0.973);
 }
 .team-flag img{
     width:200px;
     height: 100px;
 }
+.sponsors{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    width: 1200px;
+    margin: 70px 0px 0 150px;
+    background-color: rgb(27, 120, 187);
+}
+legend{
+    color:  #2D25A0;
+  font-weight: 900;
+  font-size: 2.5em;
+  text-align: center;
+}
+.sponsors i{
 
+ width: 310px;
+    height:180px;
+}
+.amazon{
+    margin-left: 20px;
+    color: black;
+}
+.wizards-color{
+    color: rgb(216, 10, 27);
+}
+.apple-color{
+    color: grey;
+}
+.ember-color{
+    color: #f05e1b ;
+}
+/* Bonus Section Style */
 
 /* Footer Style  */
 footer{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0;
-margin-top: 150px;
-margin-bottom: 60px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 1200px;
+    margin: 150px 0px 110px 200px;
+    align-items: center;
 }
 footer img{
     width: 480px;
@@ -150,6 +183,9 @@ footer i{
     width: 32px;
     height: 32px;
 }
+/* Footer Style  */
+
+
 /* Mobile View  */
 @media only screen and (max-width:768px) {
 
@@ -158,7 +194,7 @@ footer i{
        grid-template-columns: repeat(1, 1fr);
         background-color: #2D25A0;
         height: 695px;
-        width: 360px;
+        width: 320px;
         padding-left: 22px;
         margin-left: auto;
         margin-right: auto;
@@ -168,12 +204,12 @@ footer i{
     }
     h1{
         font-size: 36px;
-        width: 300px;
+        width: 280px;
         height: 210px;
     }
 
     .banner-img{
-        width: 330px;
+        width: 300px;
         height: 260px;
         margin: 20px 0 0 15px;
         transition: width 4s, height 4s, transform 4s;
@@ -187,16 +223,19 @@ footer i{
     }
  /* All Player style's Here */
     .top-players{
-        width: 360px;
-        padding-left: 22px;
+        width: auto;
+        padding-left: auto;
         margin-left: auto;
         margin-right: auto;
         }
     .players{
-        margin: 40px 0px 0 0px;
+        margin-top: 40px;
+        margin-left: 15px;
+        padding: 0;
         display: grid ;
         grid-template-columns: repeat(1, 1fr);
-        width: 0;
+        row-gap: 30px;
+        width: auto;
     }
 
     .player p{
@@ -204,27 +243,56 @@ footer i{
         font-weight: normal;
         color: #6c6c6c;
     }
-    footer{
-        margin-top: 50px;
-       
-    }
-    footer img{
-        width: 280px;
-        height: 80px;
-        padding-right: 30px;
-    }
 
-    /* Bonus Section Style */
-.fieldset1{    
-    width:auto ;
-    margin-left: 60px;
+ /* Bonus Section Style */
+
+.match-fixture{
+    width: auto;
+    margin: 0;
+    padding: 5px;
+}
+.fieldset1{
+        margin: 40px 0px 0 0px;
+        display: grid ;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+        padding: 10px;
+}
+legend{
+    padding: 0;
+    text-align:left;
 }
 .fixture{
-font-size: 15px;
-margin-left: 10px;
+    margin: 20px 0 0 0 ;
 }
 .team-flag img{
     width:50px;
     height: 80px;
 }
+
+.sponsors{
+    margin: 40px 0px 0 0px;
+    display: grid ;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    width: auto;
+    
+}
+.sponsors i{
+    text-align: center ;
+}
+/* Bonus Section Style */
+
+footer{
+
+        margin: 50px 0 0 0 ;
+        width: auto;  
+    }
+footer img{
+        width: 280px;
+        height: 80px;
+        padding-right: 30px;
+    }
+
+
 }
