@@ -17,7 +17,7 @@ h2{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     background-color: #2D25A0;
-    width:1765px;
+    width: 1758px;
     height: 677px;
    
 }
