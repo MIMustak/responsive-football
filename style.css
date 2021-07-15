@@ -17,7 +17,7 @@ h2{
     display:grid;
     grid-template-columns: repeat(2,1fr);
     background-color: #2D25A0;
-    width:1580px;
+    width:1765px;
     height: 677px;
    
 }
@@ -61,11 +61,7 @@ h2{
 
 /* All Player style's Here */
 .top-players{
-    margin: 70px 0px 0 250px;
-    /* display: grid; */
-    /* grid-template-rows: repeat(1, 1fr); */
-    /* display: flex; */
-    /* flex-direction: row; */
+    margin: 70px 0px 0 370px;
     width: 1050px;
 }
 .players, .fieldset1{
@@ -105,18 +101,15 @@ h2{
 
 /* Bonus Section Style */
 .match-fixture{
-    margin: 70px 0px 0 227px;
+    margin: 70px 0px 0 347px;
     width: 1050px;
-
 }
 .fieldset1{
     display: flex;
-    /* grid-template-columns: repeat(3, 1fr); */
     margin-top: 50px;
     flex-direction: row;
     font-size: 30px;
     color: rgb(21, 172, 139);
-    /* background-color: rgba(7, 19, 36, 0.945); */
 }
 .fixture{
     width: 330px;
@@ -136,7 +129,7 @@ h2{
     margin-top: 50px;
     flex-direction: row;
     width: 1200px;
-    margin: 70px 0px 0 150px;
+    margin: 70px 0px 0 270px;
     background-color: rgb(27, 120, 187);
 }
 legend{
@@ -171,7 +164,7 @@ footer{
     margin-top: 50px;
     flex-direction: column;
     width: 1200px;
-    margin: 150px 0px 110px 200px;
+    margin: 150px 0px 110px 320px;
     align-items: center;
 }
 footer img{
@@ -188,57 +181,59 @@ footer i{
 
 /* Mobile View  */
 @media only screen and (max-width:768px) {
-
-    .copa-banner{
+html,main, body{
+    width: 360px;
+}
+.copa-banner{
         display:grid;
        grid-template-columns: repeat(1, 1fr);
         background-color: #2D25A0;
         height: 695px;
-        width: 320px;
+        width: 330px;
         padding-left: 22px;
         margin-left: auto;
         margin-right: auto;
     }
-    .copa-america{
+.copa-america{
         margin: 50px 0 0 25px ;
     }
-    h1{
+h1{
         font-size: 36px;
         width: 280px;
         height: 210px;
     }
 
-    .banner-img{
+.banner-img{
         width: 300px;
         height: 260px;
         margin: 20px 0 0 15px;
         transition: width 4s, height 4s, transform 4s;
         
     }
-    .banner-img:hover{
-        width: 350px;
+.banner-img:hover{
+        width: 310px;
         height: 320px;
         transform:skewX(-20deg);
         transform: skewY(5deg);    
     }
  /* All Player style's Here */
-    .top-players{
-        width: auto;
+.top-players{
+        width: 350px;
         padding-left: auto;
         margin-left: auto;
         margin-right: auto;
         }
-    .players{
+.players{
         margin-top: 40px;
         margin-left: 15px;
         padding: 0;
         display: grid ;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 30px;
-        width: auto;
+        width: 340px;
     }
 
-    .player p{
+.player p{
         font-size: 15px;
         font-weight: normal;
         color: #6c6c6c;
@@ -247,7 +242,7 @@ footer i{
  /* Bonus Section Style */
 
 .match-fixture{
-    width: auto;
+    width: 340px;
     margin: 0;
     padding: 5px;
 }
@@ -283,9 +278,10 @@ legend{
 }
 /* Bonus Section Style */
 
+/* Footer Style  */
 footer{
 
-        margin: 50px 0 0 0 ;
+        margin: 60px 0 100px 0 ;
         width: auto;  
     }
 footer img{
@@ -294,5 +290,6 @@ footer img{
         padding-right: 30px;
     }
 
-
+/* Footer Style  */
 }
+/* Mobile View  */
